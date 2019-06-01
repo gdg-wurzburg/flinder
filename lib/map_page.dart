@@ -1,3 +1,4 @@
+import 'package:flinder/add_new.dart';
 import 'package:flinder/widgets/time_slider.dart';
 import 'package:flinder/world.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,11 @@ class _MapPageState extends State<MapPage> {
       ),
       body: World(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showDialog(context: context, builder: (context) {
+            return AddNew();
+          });
+        },
         child: Icon(Icons.add),
         backgroundColor: Colors.green,
       ),

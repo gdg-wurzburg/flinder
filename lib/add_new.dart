@@ -1,4 +1,3 @@
-import 'package:flinder/res/app_colors.dart';
 import 'package:flinder/res/dimensions.dart';
 import 'package:flinder/res/style.dart';
 import 'package:flinder/res/styled_widgets.dart';
@@ -12,8 +11,20 @@ class AddNew extends StatelessWidget {
           .copyWith(appBarTheme: FullscreenDialogAppBarTheme()),
       child: Scaffold(
         appBar: AppBar(
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.close),
+          ),
           actions: <Widget>[
-            FlatButton(onPressed: (){},child: Text("SAVE",style: Theme.of(context).textTheme.button,),)
+            FlatButton(
+              onPressed: () {},
+              child: Text(
+                "SAVE",
+                style: Theme.of(context).textTheme.button,
+              ),
+            )
           ],
           centerTitle: true,
           title: Text("Add new entry"),
@@ -25,17 +36,21 @@ class AddNew extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-               InputText(labelText: "Title",),
-                SizedBox(
-                  height: Dimensions.linePadding,
-                ),
-               InputText.multiLine(labelText:
-                  "Description",
+                InputText(
+                  labelText: "Title",
                 ),
                 SizedBox(
                   height: Dimensions.linePadding,
                 ),
-               InputText(labelText: "Location name",),
+                InputText.multiLine(
+                  labelText: "Description",
+                ),
+                SizedBox(
+                  height: Dimensions.linePadding,
+                ),
+                InputText(
+                  labelText: "Location name",
+                ),
               ],
             ),
           ),

@@ -20,7 +20,7 @@ class _TimeSliderState extends State<TimeSlider> {
           width: MediaQuery.of(context).size.width,
           child: Center(
             child: Text(
-              'i$index',
+              '${list[index]} 2019',
               style: Theme.of(context).textTheme.title.copyWith(color: Colors.white),
             ),
           ),
@@ -28,4 +28,19 @@ class _TimeSliderState extends State<TimeSlider> {
       },
     );
   }
+
+  var list = <String>[
+    'Januar',
+    'Februar',
+    'März',
+    'April',
+    'Mai',
+    'Juni',
+    'Juli',
+    'August',
+    'September',
+    'Oktober',
+    'November',
+    'Dezember',
+  ];
 }
