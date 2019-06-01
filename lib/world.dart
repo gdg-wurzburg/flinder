@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flare_flutter/flare_actor.dart';
+
 
 class World extends StatefulWidget {
   @override
@@ -8,6 +10,7 @@ class World extends StatefulWidget {
 class _WorldState extends State<World> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return FlareActor("assets/earth.flr", animation: 'pulse');
   }
 }
+
