@@ -15,9 +15,17 @@ class _MapPageState extends State<MapPage> {
       appBar: AppBar(
         title: Text('Flinder'),
       ),
-      bottomNavigationBar: SizedBox(
-        height: 100,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: Container(
         child: TimeSlider(),
+        color: Colors.blue[900],
+        height: 100,
+        width: double.infinity,
       ),
     );
   }

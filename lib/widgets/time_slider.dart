@@ -14,10 +14,15 @@ class _TimeSliderState extends State<TimeSlider> {
     return ListView.builder(
       itemCount: 10,
       scrollDirection: Axis.horizontal,
+      physics: PageScrollPhysics(),
       itemBuilder: (BuildContext context, int index) {
         return SizedBox(
+          width: MediaQuery.of(context).size.width,
           child: Center(
-            child: Text('i$index'),
+            child: Text(
+              'i$index',
+              style: Theme.of(context).textTheme.title.copyWith(color: Colors.white),
+            ),
           ),
         );
       },

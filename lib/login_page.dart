@@ -13,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Center(
         child: MaterialButton(
           onPressed: () {
-            Navigator.pushNamed(context, Routes.map);
+            Navigator.pushReplacementNamed(context, Routes.map);
           },
           child: Text('Open Map'),
         ),
