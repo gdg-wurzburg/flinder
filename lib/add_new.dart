@@ -1,6 +1,7 @@
 import 'package:flinder/res/dimensions.dart';
 import 'package:flinder/res/style.dart';
 import 'package:flinder/res/styled_widgets.dart';
+import 'package:flinder/widgets/map_widget.dart';
 import 'package:flutter/material.dart';
 
 class AddNew extends StatelessWidget {
@@ -36,17 +37,22 @@ class AddNew extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-               InputText(labelText: "Title",),
-                SizedBox(
-                  height: Dimensions.linePadding,
-                ),
-               InputText.multiLine(labelText:
-                  "Description",
+                InputText(
+                  labelText: "Title",
                 ),
                 SizedBox(
                   height: Dimensions.linePadding,
                 ),
-               InputText(labelText: "Location name",),
+                InputText.multiLine(
+                  labelText: "Description",
+                ),
+                SizedBox(
+                  height: Dimensions.linePadding,
+                ),
+                InputText(
+                  labelText: "Location name",
+                ),
+                MapWidget(),
               ],
             ),
           ),
