@@ -1,3 +1,4 @@
+import 'package:flinder/map_page.dart';
 import 'package:flinder/routes.dart';
 import 'package:flinder/world.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         Routes.login: (context) => LoginPage(),
-        Routes.map: (context) => World(),
+        Routes.map: (context) => MapPage(),
       },
       title: 'flinder',
       theme: ThemeData(
