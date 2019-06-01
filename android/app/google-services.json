@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "950014793850",
+    "firebase_url": "https://flird-b96ff.firebaseio.com",
+    "project_id": "flird-b96ff",
+    "storage_bucket": "flird-b96ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950014793850:android:d9db39affa72672a",
+        "android_client_info": {
+          "package_name": "de.oliverheim.flinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950014793850-4chr3n7kjtpdmt4crgfgbat2jap3a84p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5T7uDcM0qZqhaOhI_apaON_9dqd99g0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950014793850-4chr3n7kjtpdmt4crgfgbat2jap3a84p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
