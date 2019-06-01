@@ -1,3 +1,4 @@
+import 'package:flinder/res/app_colors.dart';
 import 'package:flinder/map_page.dart';
 import 'package:flinder/routes.dart';
 import 'package:flinder/world.dart';
@@ -18,7 +19,9 @@ class MyApp extends StatelessWidget {
       },
       title: 'flinder',
       theme: ThemeData(
+        textTheme: TextTheme(button: TextStyle(color: AppColors.primaryColor)),
         primarySwatch: Colors.blue,
+        canvasColor: AppColors.canvasColor,
       ),
     );
   }
