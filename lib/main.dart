@@ -1,7 +1,6 @@
 import 'package:flinder/res/app_colors.dart';
 import 'package:flinder/map_page.dart';
 import 'package:flinder/routes.dart';
-import 'package:flinder/world.dart';
 import 'package:flutter/material.dart';
 
 import 'login_page.dart';
