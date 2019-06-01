@@ -20,13 +20,16 @@ class World extends StatefulWidget {
 class _WorldState extends State<World> {
   @override
   Widget build(BuildContext context) {
-    LocationProvider locationprovider = Provider.of<LocationProvider>(context)
+    /*LocationProvider locationprovider = Provider.of<LocationProvider>(context)
       ..addListener(() {
         setState(() {});
       });
     widget.earth['lat'].value = locationprovider.latitude;
     widget.earth['lon'].value = locationprovider.longitude;
-    print(locationprovider.test);
+    print(locationprovider.test);*/
+    for (int i = 0;i<360;i++){
+      widget.earth['lon'].value = i.toDouble();
+    }
     return FlareActor("assets/earth.flr",
         animation: 'pulse', color: Colors.blue, controller: widget.earth);
   }

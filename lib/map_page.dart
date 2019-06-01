@@ -1,4 +1,5 @@
 import 'package:flinder/widgets/time_slider.dart';
+import 'package:flinder/world.dart';
 import 'package:flutter/material.dart';
 
 class MapPage extends StatefulWidget {
@@ -15,6 +16,7 @@ class _MapPageState extends State<MapPage> {
       appBar: AppBar(
         title: Text('Flinder'),
       ),
+      body: World(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.add),
